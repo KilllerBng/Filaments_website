@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Primary page title (SEO-optimized, keep under ~60 chars) -->
+  <title>Filaments VFX — CGI & Visual Effects Studio in LA</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="Filaments VFX is a boutique VFX & CGI studio in Los Angeles creating high-end visual effects, compositing and CGI for films, TV and commercials worldwide.">
+  <meta name="author" content="Filaments VFX">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.com/">
+
+  <!-- Open Graph (social / rich previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Filaments VFX — CGI & Visual Effects Studio">
+  <meta property="og:description" content="High-end VFX & CGI services for films, TV and commercials. Based in LA, serving global clients.">
+  <meta property="og:image" content="https://yourdomain.com/img/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:site_name" content="Filaments VFX">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Filaments VFX — CGI & Visual Effects Studio">
+  <meta name="twitter:description" content="High-end VFX & CGI services for films, TV and commercials.">
+  <meta name="twitter:image" content="https://yourdomain.com/img/og-image.jpg">
+
+  <!-- Favicon -->
+  <!-- Fonts + Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#054C5B',
+            secondary: '#054C5B',
+            dark: '#000000',
+            light: '#000000'
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            orbitron: ['Orbitron', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Main stylesheet -->
+  <link href="style.css" rel="stylesheet"/>
+
+  <!-- Simple nav hide/show CSS -->
+  <style>
+    #navbar {
+      transition: transform 260ms cubic-bezier(.2,.9,.2,1), opacity 220ms ease;
+      will-change: transform, opacity;
+      backface-visibility: hidden;
+    }
+    #navbar.nav-hidden {
+      transform: translateY(-120%);
+      opacity: 0;
+      pointer-events: none;
+    }
+    #navbar.nav-visible {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+
+  <!-- Accessibility: add language/locale hints (keeps same) -->
+  <meta http-equiv="Content-Language" content="en-US" />
+
+  <!-- Structured data (Organization + sample CreativeWork entries for key portfolio items) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Filaments VFX",
+        "url": "https://yourdomain.com",
+        "logo": "https://yourdomain.com/img/logo.gif",
+        "description": "High-end VFX & CGI studio delivering visual effects for films, TV and commercials.",
+        "founder": "Rohit Marble",
+        "sameAs": [
+          "https://www.linkedin.com/in/yourprofile",
+          "https://www.instagram.com/yourpage",
+          "https://www.facebook.com/yourpage"
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Lion & Stitch",
+        "creator": { "@type": "Organization", "name": "Filaments VFX" },
+        "genre": "Film VFX",
+        "thumbnailUrl": "https://yourdomain.com/img/Lion%20&%20Stitch.webp",
+        "url": "https://yourdomain.com/portfolio/lion-and-stitch"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Unstoppable",
+        "creator": { "@type": "Organization", "name": "Filaments VFX" },
+        "genre": "Film VFX",
+        "thumbnailUrl": "https://yourdomain.com/img/Unstoppable.webp",
+        "url": "https://yourdomain.com/portfolio/unstoppable"
+      }
+    ]
+  }
+  </script>
+
+<!-- ✅ Updated favicon section for all devices -->
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+
+<link rel="manifest" href="icons/site.webmanifest">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body class="min-h-screen bg-dark">
+<!-- NAV -->
+<nav class="fixed w-full z-50 bg-dark/95 border-b border-gray-800 transition-opacity duration-500" id="navbar">
+<div class="container-header">
+<div class="flex items-center h-24 w-full">
+<!-- Left: logo + tagline + wordmark -->
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-center">
+<a aria-label="Filaments Home" class="block" href="#home">
+<img alt="Filaments" class="h-14 md:h-16 lg:h-20 tra w-auto logo-only" decoding="async" loading="lazy" src="img/logo.gif"/>
+</a>
+<div class="mt-1 text-[10px] md:text-xs tracking-[0.25em] uppercase text-gray-300 text-center">
+<span class="tagline-wrap">NO MONKEY BUSINESS</span>
+</div>
+</div>
+<div class="block text-2xl md:text-3xl lg:text-4xl font-orbitron font-bold leading-none">
+<span style="color:#054C5B;">FILAMENTS</span>
+</div>
+</div>
+<!-- Spacer pushes right block to edge -->
+<div class="flex-1"></div>
+<!-- Right: desktop links + mobile button -->
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-gray-300 hover:text-white transition-colors" href="#home">Home</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#services">Services</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#showreel">Showreel</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#portfolio">Portfolio</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#about">About</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#contact">Contact</a>
+</div>
+<div class="md:hidden ml-auto">
+<button aria-label="Open menu" class="text-gray-300 hover:text-white" id="mobile-menu-btn" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<p class="mt-2 text-center text-gray-300 font-semibold"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Mobile menu (keeps existing structure) -->
+<div class="md:hidden hidden bg-dark border-t border-gray-800" id="mobile-menu">
+<div class="px-4 py-4 space-y-4">
+<a class="block text-gray-300 hover:text-white" href="#home">Home</a>
+<a class="block text-gray-300 hover:text-white" href="#services">Services</a>
+<a class="block text-gray-300 hover:text-white" href="#showreel">Showreel</a>
+<a class="block text-gray-300 hover:text-white" href="#portfolio">Portfolio</a>
+<a class="block text-gray-300 hover:text-white" href="#about">About</a>
+<a class="block text-gray-300 hover:text-white" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<script>
+(function(){
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if(!btn || !menu) return;
+  // initialize aria
+  if (!btn.hasAttribute('aria-expanded')) btn.setAttribute('aria-expanded', 'false');
+  btn.addEventListener('click', function(){
+    const isHidden = menu.classList.contains('hidden');
+    if(isHidden){
+      menu.classList.remove('hidden');
+      menu.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    } else {
+      menu.classList.add('hidden');
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    // visually indicate state for screen readers
+    btn.classList.toggle('menu-open', isHidden);
+  });
+})();
+</script>
+
+<!-- HERO VIDEO -->
+<section class="relative flex items-center justify-center overflow-hidden" id="home" style="width:100%;height:calc(100svh - var(--nav-h));margin-top:var(--nav-h);">
+<!--<a aria-label="Watch on YouTube" class="absolute inset-0 z-20" href="https://www.youtube.com/watch?v=EonoQcTDsAU&amp;ab_channel=NGfila" rel="noopener" style="display:block;" target="_blank"></a> -->
+<div class="hero-stage">
+<video aria-hidden="true" autoplay="" class="hero-video-bg" loop="" muted="" playsinline=""><source src="videos/showcase.mp4" type="video/mp4"/>
+</video>
+</div>
+<video autoplay="" class="hero-video-fore" loop="" muted="" playsinline="" poster=""><source src="videos/showcase.mp4" type="video/mp4"/>
+Your browser does not support the video tag.
+</video>
+<!-- Icon overlay (visible but non-clickable) -->
+<button aria-hidden="true" class="absolute bottom-6 right-6 z-50 bg-black/50 text-white p-3 rounded-full" id="toggleSoundBtn">🔇</button>
+<div class="absolute bottom-16 left-20 z-50 text-black/60 font-orbitron text-xl tracking-widest hero-badge">
+      FILAMENTS
+    </div>
+<!-- pure black gradient -->
+<!-- Fallback button shown only if autoplay fails -->
+<button class="hidden absolute inset-0 m-auto h-12 w-32 rounded-full border border-white/40 text-white/90 hover:text-white hover:border-white/80" id="playHeroBtn">Play</button>
+</section>
+<!-- HEADLINE BANNER -->
+<section class="relative bg-dark py-16 text-center border-b border-gray-800" id="studio-intro">
+<div class="container-resp">
+<h1 class="font-orbitron headline text-3xl md:text-5xl font-extrabold mb-6">
+<span class="text-primary">FILAMENTS</span><span class="text-white"></span>– WHERE YOUR STORIES TRANSFORM INTO 
+        <span class="text-secondary">SPECTACLE</span>.
+      </h1>
+<p class="subhead text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+<span class="font-semibold text-white">LA</span> -based. Globally seen. High-end 
+        <span class="font-semibold text-white">VFX &amp; CGI</span> for stories 
+        <span class="font-semibold text-white"></span>that demand more.
+      </p>
+<div class="mt-8">
+<a class="inline-block border border-white/30 hover:border-primary text-white hover:text-primary rounded-full transition-colors px-6 py-2" href="#contact">
+          GET IN TOUCH
+        </a>
+</div>
+</div>
+<div class="relative z-10">
+</div>
+</section>
+<!-- INTRO CARD -->
+<section class="relative bg-dark py-24" id="intro">
+<div class="container-resp">
+<div class="bg-gray-800/80 border border-gray-700 rounded-2xl px-10 py-16 text-center shadow-xl space-y-8">
+<!-- Title -->
+<h2 class="font-orbitron text-3xl md:text-4xl tracking-wide">
+        Your Creative VFX Partner — Based in LA, working worldwide
+      </h2>
+<!-- Paragraph -->
+<p class="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
+        At Filaments, we specialize in creating visually stunning, story-driven effects for films, 
+        streaming platforms, and commercials. From concept to delivery, our team combines artistry 
+        with innovation to produce visuals that inspire.
+      </p>
+<!-- Button -->
+<div class="pt-4">
+<a class="inline-block border border-white/30 hover:border-primary text-white hover:text-primary rounded-full transition-colors px-10 py-3 text-sm md:text-base" href="#about">
+          ABOUT FILAMENTS
+        </a>
+</div>
+</div>
+<div class="relative z-10">
+</div>
+</div></section>
+<!-- end of #intro -->
+<hr class="border-t border-gray-700 my-12"/>
+<!-- OUR WORK -->
+<section class="bg-dark py-20" id="portfolio">
+<div class="container-resp">
+<div class="relative flex items-center justify-center mb-6">
+<h3 class="text-center font-orbitron text-2xl md:text-3xl tracking-widest text-gray-300 mb-10" style="color:#054C5B;">
+  Our Visual Effects Work
+</h3>
+<!-- Posters grid: fixed aspect ratio to avoid stretch -->
+<div class="lg:col-span-2 grid recent-grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+<div class="relative">
+<span class="absolute top-2 right-2 z-10 text-[10px] md:text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold tracking-wide">RECENT</span>
+<div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="Predator: Badlands" class="rounded-xl" decoding="async" loading="lazy" src="img/prediator.webp"/></div>
+<div class="poster-caption mt-3 text-gray-200 text-sm md:text-base font-semibold tracking-wide uppercase">Predator: Badland</div>
+</div>
+
+<div class="relative">
+<span class="absolute top-2 right-2 z-10 text-[10px] md:text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold tracking-wide">RECENT</span>
+<div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="tron_ares" class="rounded-xl" decoding="async" loading="lazy" src="img/tron_ares.webp"></div>
+<div class="poster-caption mt-3 text-gray-200 text-sm md:text-base font-semibold tracking-wide uppercase">TRON ARES</div>
+</div>
+<div class="relative">
+<span class="absolute top-2 right-2 z-10 text-[10px] md:text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold tracking-wide">RECENT</span>
+<div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="Lion & Stitch" class="rounded-xl" decoding="async" loading="lazy" src="img/Lion &amp; Stitch.webp"/></div>
+<div class="poster-caption mt-3 text-gray-200 text-sm md:text-base font-semibold tracking-wide uppercase">LION &amp; STITCH</div>
+</div>
+<div class="relative">
+<span class="absolute top-2 right-2 z-10 text-[10px] md:text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold tracking-wide">RECENT</span>
+<div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="Unstoppable" class="rounded-xl" decoding="async" loading="lazy" src="img/Unstoppable.webp"/></div>
+<div class="poster-caption mt-3 text-gray-200 text-sm md:text-base font-semibold tracking-wide uppercase">UNSTOPPABLE</div>
+</div>
+</div>
+</div>
+<div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+ <figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="CARTER" class="rounded-lg" decoding="async" loading="lazy" src="img/carter.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure> 
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="Reacher" class="rounded-lg" decoding="async" loading="lazy" src="img/Guardians_of_the_galaxy.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="1923" class="rounded-lg" decoding="async" loading="lazy" src="img/Maleficent.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="The Lost Lands" class="rounded-lg" decoding="async" loading="lazy" src="img/sanandreas.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="From" class="rounded-lg" decoding="async" loading="lazy" src="img/i_robot.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="From" class="rounded-lg" decoding="async" loading="lazy" src="img/Life_of_pie.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+
+</div>
+<div class="hidden mt-8" id="more-projects">
+<div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+ <figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="Iron man" class="rounded-lg" decoding="async" loading="lazy" src="img/ironman.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure> 
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="wolverine" class="rounded-lg" decoding="async" loading="lazy" src="img/wolverine.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="monkey 2" class="rounded-lg" decoding="async" loading="lazy" src="img/monkey_2.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="ripd" class="rounded-lg" decoding="async" loading="lazy" src="img/ripd.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="thore" class="rounded-lg" decoding="async" loading="lazy" src="img/thore.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="Zorro" class="rounded-lg" decoding="async" loading="lazy" src="img/Zorro.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="piranha" class="rounded-lg" decoding="async" loading="lazy" src="img/piranha.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="water_for_elephants" class="rounded-lg" decoding="async" loading="lazy" src="img/water_for_elephants.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="wonderland" class="rounded-lg" decoding="async" loading="lazy" src="img/wonderland.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="ninja turtel" class="rounded-lg" decoding="async" loading="lazy" src="img/ninja_turtel.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="name_of_the_king" class="rounded-lg" decoding="async" loading="lazy" src="img/name_of_the_king.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+<figure class="text-center"><div class="ratio-2-3" style="max-width:100%;height:auto;"><img alt="after earth" class="rounded-lg" decoding="async" loading="lazy" src="img/After_earth.webp"/></div><figcaption class="mt-2 text-gray-200 text-xs md:text-sm font-semibold uppercase"></figcaption></figure>
+
+</div>
+</div>
+<div class="text-center mt-8">
+<button class="border border-white/30 hover:border-primary text-white hover:text-primary rounded-full transition-colors px-6 py-3 font-semibold" id="moreBtn" onclick="toggleMoreProjects()" type="button">
+          More Projects
+        </button>
+<p class="mt-2 text-center text-gray-300 font-semibold"></p>
+</div>
+</div>
+<div class="relative z-10">
+</div>
+</section>
+<hr class="border-t border-gray-700 my-12"/>
+<!-- SERVICES -->
+<section class="bg-dark py-20" id="services">
+<div class="container-resp">
+<h3 class="text-center font-orbitron text-2xl md:text-3xl tracking-widest text-gray-300 mb-10" style="color:#ffffff;">
+  OUR SERVICES
+</h3>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 cards-grid">
+<!-- Card 1 -->
+<a class="group relative overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/60 flex flex-col h-full" href="#contact">
+<div class="ratio-16-9 relative overflow-hidden rounded-t-2xl">
+<video class="service-video absolute inset-0 w-full h-full object-cover" loop="True" muted="True" playsinline="True" preload="metadata"><source src="projects/mm.mp4" type="video/mp4"/></video>
+</div>
+<div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+<div class="p-6 text-center mt-auto">
+<div class="font-orbitron tracking-wide text-white text-lg">MATCHMOVE</div>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="group relative overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/60 flex flex-col h-full" href="#contact">
+<div class="ratio-16-9 relative overflow-hidden rounded-t-2xl">
+<video class="service-video absolute inset-0 w-full h-full object-cover" loop="True" muted="True" playsinline="True" preload="metadata"><source src="projects/CG.mp4" type="video/mp4"/></video>
+</div>
+<div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+<div class="p-6 text-center mt-auto">
+<div class="font-orbitron tracking-wide text-white text-lg">CGI</div>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="group relative overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/60 flex flex-col h-full" href="#contact">
+<div class="ratio-16-9 relative overflow-hidden rounded-t-2xl">
+<video class="service-video absolute inset-0 w-full h-full object-cover" loop="True" muted="True" playsinline="True" preload="metadata"><source src="projects/vfx.mp4" type="video/mp4"/></video>
+</div>
+<div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+<div class="p-6 text-center mt-auto">
+<div class="font-orbitron tracking-wide text-white text-lg">VFX</div>
+</div>
+</a>
+<!-- Card 4 -->
+<a class="group relative overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/60 flex flex-col h-full" href="#contact">
+<div class="ratio-16-9 relative overflow-hidden rounded-t-2xl">
+<video class="service-video absolute inset-0 w-full h-full object-cover" loop="True" muted="True" playsinline="True" preload="metadata"><source src="projects/stereo.mp4" type="video/mp4"/></video>
+</div>
+<div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+<div class="p-6 text-center mt-auto">
+<div class="font-orbitron tracking-wide text-white text-lg">STEREO COMP</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<hr class="border-t border-gray-700 my-12"/>
+<!-- FEATURE VIDEO -->
+<!-- FEATURE VIDEO (Carousel) -->
+<section class="py-12 bg-dark" id="showreel">
+<div class="container mx-auto px-6">
+<h3 class="text-2xl font-orbitron text-center mb-8" style="color:#054C5B;">Our Showreel</h3>
+<div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" id="showreelGrid">
+<div class="poster-card relative" data-seek="25" data-src="videos/showreel_01.mp4">
+<video class="poster-thumb-video w-full h-44 object-cover rounded-xl" muted="" playsinline="" preload="metadata">
+<source src="videos/showreel_01.mp4" type="video/mp4"/>
+</video>
+<button class="play-overlay">▶</button>
+<p class="caption mt-3 text-center font-semibold">ROTOSCOPY</p>
+</div>
+<div class="poster-card relative" data-seek="36" data-src="videos/showreel_02.mp4">
+<video class="poster-thumb-video w-full h-44 object-cover rounded-xl" muted="" playsinline="" preload="metadata">
+<source src="videos/showreel_02.mp4" type="video/mp4"/>
+</video>
+<button class="play-overlay">▶</button>
+<p class="caption mt-3 text-center font-semibold">PAINT</p>
+</div>
+<div class="poster-card relative" data-seek="8" data-src="videos/showreel_03.mp4">
+<video class="poster-thumb-video w-full h-44 object-cover rounded-xl" muted="" playsinline="" preload="metadata">
+<source src="videos/showreel_03.mp4" type="video/mp4"/>
+</video>
+<button class="play-overlay">▶</button>
+<p class="caption mt-3 text-center font-semibold">COMPOSITING</p>
+</div>
+</div>
+</div>
+</section>
+<hr class="border-t border-gray-700 my-12"/>
+<!-- BACKGROUND VIDEO-->
+<section class="section-video">
+<video autoplay="" class="section-video__media" loop="" muted="" playsinline="">
+<source src="videos/horse1.mp4" type="video/mp4"/>
+</video>
+<div class="section-video__overlay"></div>
+<div class="section-video__content container-resp text-center text-white py-20" id="studio-feature-text">
+<h2 class="text-4xl md:text-5xl font-orbitron font-bold mb-4" style="color:#ececec; opacity:1;">
+      Stunning Visuals, Seamless Experience
+    </h2>
+<p class="max-w-2xl mx-auto text-gray-200 text-lg">
+    </p>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="py-20 bg-dark" id="about">
+<div class="container-resp">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-center font-orbitron text-2xl md:text-3xl tracking-widest text-gray-300 mb-10" style="color:#054C5B;">
+          Meet the Vision Behind Filaments
+        </h2>
+<p class="text-xl text-gray-300 mb-6">
+          At the core of Filaments is its founder and owner, 
+          <span class="font-bold" style="color:#054C5B;">Rohit Marble</span> — a visionary leader with over two decades of experience in visual effects and media &amp; entertainment technology solutions. 
+          His passion for innovation and storytelling laid the foundation for Filaments: a boutique VFX studio with global reach and a creative soul. 
+        </p>
+<p class="text-gray-400 mb-8">
+          Rohit is deeply committed to delivering high-quality work on time, while maintaining budget-conscious production costs — a standard that defines every project Filaments undertakes.
+        </p>
+<p class="text-gray-400 mb-8">
+          But Filaments is more than just one mind — it's a 
+          <span class="font-bold" style="color:#054C5B;">collective force</span>. 
+          Alongside Rohit is a powerhouse team of artists, technologists, and storytellers based in India, all driven by a shared mission: to transform imagination into cinematic reality. 
+          Whether it's a blockbuster film, a hit TV series, a high-impact commercial, or an immersive digital experience, every project we touch blends creativity, precision, and emotional impact.
+        </p>
+<p class="text-gray-400 mb-8">
+          Together, Rohit and the Filaments team embody the perfect intersection of 
+          <span class="font-bold" style="color:#054C5B;">leadership, artistry, and technical mastery</span> — continuously pushing the boundaries of what's possible in visual storytelling.
+        </p>
+<!-- Contact Section -->
+<div class="text-center text-gray-300 mb-8">
+<h3 class="font-orbitron text-2xl md:text-3xl tracking-widest mb-6" style="color:#054C5B;">
+            Get in Touch
+          </h3>
+<p>
+<a class="hover:underline hover:text-blue-500 transition" href="mailto:rohit.marble@filamentsllc.com">
+              Email :-  rohit.marble@filamentsllc.com
+            </a>
+</p>
+<p>
+<a class="hover:underline hover:text-blue-500 transition" href="tel:8185224257">
+              Phone :-  818 522 4257
+            </a>
+</p>
+</div>
+</div>
+<!-- Right Side Images -->
+<div class="grid grid-cols-2 gap-4">
+<div class="animate-float">
+<div class="ratio-1-1">
+<img alt="VFX artist at work" class="w-full rounded-2xl" decoding="async" loading="lazy" src="img/Rohit_sir.webp"/>
+</div>
+</div>
+<div class="animate-float" style="animation-delay: 1s;">
+<div class="ratio-1-1">
+<img alt="Team collaboration in studio" class="w-full rounded-2xl mt-8" decoding="async" loading="lazy" src="img/office.jpg"/>
+</div>
+</div>
+<div class="relative z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<hr class="border-t border-gray-700 my-12"/>
+<!-- PORTFOLIO GRID (extra) -->
+<!--
+<section class="py-20 bg-dark" id="portfolio-2">
+<div class="container-resp">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-orbitron font-bold mb-4">Featured <span class="text-primary">Work</span></h2>
+<p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Showcasing our most impressive projects and creative achievements
+        </p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group bg-gray-800 rounded-2xl overflow-hidden">
+<div class="ratio-16-9 overflow-hidden">
+<img alt="Project 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" decoding="async" loading="lazy" src="https://placehold.co/600x400">
+</img></div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-6">Cyber City 2077</h3>
+<p class="text-gray-300">Complete CGI environment for sci-fi feature film</p>
+</div>
+</div>
+<div class="group bg-gray-800 rounded-2xl overflow-hidden">
+<div class="ratio-16-9 overflow-hidden">
+<img alt="Project 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" decoding="async" loading="lazy" src="https://placehold.co/600x400">
+</img></div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-6">Dragon's Flight</h3>
+<p class="text-gray-300">Character animation and environmental effects</p>
+</div>
+</div>
+<div class="group bg-gray-800 rounded-2xl overflow-hidden">
+<div class="ratio-16-9 overflow-hidden">
+<img alt="Project 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" decoding="async" loading="lazy" src="https://placehold.co/600x400">
+</img></div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-6">Ocean Depths</h3>
+<p class="text-gray-300">Underwater environment and creature VFX</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10">
+</div>
+</section>
+<hr class="border-t border-gray-700 my-12">
+-->
+<!-- CONTACT -->
+<section class="relative py-20 bg-dark overflow-hidden" id="contact">
+<!-- Full-bleed background image for contact section -->
+<div class="absolute inset-0 z-0 pointer-events-none">
+<img &amp;w='1600&amp;auto=format&amp;fit=crop"' alt="" class="w-full h-full object-cover" decoding="async" loading="lazy" src="img\background.webp"/>
+<div class="absolute inset-0 bg-black/70"></div>
+</div>
+<div class="relative z-10">
+<div class="container-resp">
+<div class="text-center mb-12">
+<h2 class="text-4xl md:text-5xl font-orbitron font-bold mb-4">Get In <span class="text-primary">Touch</span></h2>
+<p class="text-xl text-gray-300">
+          Ready to bring your vision to life? Let's discuss your project!
+        </p>
+</div>
+<div class="bg-gray-800 rounded-2xl p-8 md:p-12 max-w-2xl mx-auto">
+<form action="https://formspree.io/f/mdklgdbn" class="space-y-6" method="POST">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-gray-300 mb-2" for="name">Full Name</label>
+<input class="w-full form-input rounded-xl px-4 py-3 text-black placeholder-gray-500" id="name" name="name" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div>
+<label class="block text-gray-300 mb-2" for="email">Email Address</label>
+<input class="w-full form-input rounded-xl px-4 py-3 text-black placeholder-gray-500" id="email" name="email" placeholder="your@email.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-gray-300 mb-2" for="projectType">Project Type</label>
+<select class="w-full form-input rounded-xl px-4 py-3 text-black" id="projectType" name="projectType">
+<option value="">Select project type</option>
+<option value="film">Film VFX</option>
+<option value="CGI"> CGI</option>
+<option value="commercial">Commercial</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div>
+<label class="block text-gray-300 mb-2" for="message">Project Details</label>
+<textarea class="w-full form-input rounded-xl px-4 py-3 text-black placeholder-gray-500" id="message" name="message" placeholder="Tell us about your project..." required="" rows="5"></textarea>
+</div>
+<input name="_gotcha" style="display:none" type="text"/>
+<button class="w-full border border-white/30 hover:border-primary text-white hover:text-primary rounded-full transition-colors px-6 py-3 font-semibold" type="submit">
+<span id="submit-text">Send Message</span>
+<div class="loader ml-3" id="loader"></div>
+</button>
+</form>
+</div>
+</div>
+<div class="relative z-10">
+</div>
+</div></section>
+<!-- FOOTER + PARTNERS -->
+<section class="bg-dark py-10 border-t border-gray-800" id="partners">
+<div class="container-resp">
+<h2 class="text-center text-xl md:text-2xl font-orbitron font-bold text-white mb-6">
+        Our Certifications &amp; Partners
+      </h2>
+<div class="marquee-container">
+<div class="marquee-group">
+<img alt="TPN" class="partner-logo" decoding="async" loading="lazy" src="https://tse1.mm.bing.net/th/id/OIP.i0A63qNEqpaYSLPDAvakAwHaEF?pid=Api"/>
+<img alt="Netflix" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=NETFLIX"/>
+<img alt="Disney+" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=DISNEY%2B"/>
+<img alt="Nickelodeon" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=NICKELODEON"/>
+<img alt="DreamWorks" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=DREAMWORKS"/>
+<img alt="Illumination" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=ILLUMINATION"/>
+</div>
+<div aria-hidden="true" class="marquee-group">
+<img alt="TPN" class="partner-logo" decoding="async" loading="lazy" src="https://tse1.mm.bing.net/th/id/OIP.i0A63qNEqpaYSLPDAvakAwHaEF?pid=Api"/>
+<img alt="Netflix" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=NETFLIX"/>
+<img alt="Disney+" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=DISNEY%2B"/>
+<img alt="Nickelodeon" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=NICKELODEON"/>
+<img alt="DreamWorks" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=DREAMWORKS"/>
+<img alt="Illumination" class="partner-logo" decoding="async" loading="lazy" src="https://placehold.co/180x60?text=ILLUMINATION"/>
+</div>
+</div>
+</div>
+<div class="relative z-10">
+</div>
+</section>
+<!-- CLEAN FOOTER -->
+<!-- FOOTER (clean, 3-column: left brand, center copyright, right social) -->
+<!-- NAV HIDE/SHOW JS (inserted by assistant) -->
+<script>
+(function(){
+  const navbar = document.getElementById('navbar');
+  if(!navbar) return;
+
+  let lastY = window.scrollY || 0;
+  let ticking = false;
+  let hidden = false;
+  const DELTA = 12; // minimum px to consider scroll significant
+  const SHOW_ON_MOUSE_Y = 80; // if mouse comes within this many px from top, show nav
+
+  // ensure initial class
+  navbar.classList.add('nav-visible');
+
+  function onScroll(){
+    const currentY = window.scrollY || 0;
+    const diff = currentY - lastY;
+
+    // only act if movement significant
+    if (Math.abs(diff) < DELTA) {
+      // small movement, ignore
+    } else if (diff > 0 && currentY > 80) {
+      // scrolled down
+      if (!hidden) {
+        navbar.classList.remove('nav-visible');
+        navbar.classList.add('nav-hidden');
+        hidden = true;
+      }
+    } else {
+      // scrolled up
+      if (hidden) {
+        navbar.classList.remove('nav-hidden');
+        navbar.classList.add('nav-visible');
+        hidden = false;
+      }
+    }
+
+    lastY = currentY;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function(){
+    if (!ticking) {
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // show navbar when mouse moves near top (desktop)
+  window.addEventListener('mousemove', function(e){
+    if (e.clientY <= SHOW_ON_MOUSE_Y) {
+      if (hidden) {
+        navbar.classList.remove('nav-hidden');
+        navbar.classList.add('nav-visible');
+        hidden = false;
+      }
+    }
+  });
+
+  // also show on touch start near top (mobile)
+  window.addEventListener('touchstart', function(e){
+    const touch = e.touches && e.touches[0];
+    if (touch && touch.clientY <= SHOW_ON_MOUSE_Y) {
+      if (hidden) {
+        navbar.classList.remove('nav-hidden');
+        navbar.classList.add('nav-visible');
+        hidden = false;
+      }
+    }
+  }, { passive: true });
+
+  // edge cases: when page loads at top, ensure visible
+  document.addEventListener('DOMContentLoaded', function(){
+    if ((window.scrollY||0) <= 10) {
+      navbar.classList.remove('nav-hidden');
+      navbar.classList.add('nav-visible');
+      hidden = false;
+    }
+  });
+})();
+</script>
+<!-- END NAV HIDE/SHOW JS -->
+<script>
+function toggleMoreProjects() {
+  const moreSection = document.getElementById("more-projects");
+  const btn = document.getElementById("moreBtn");
+
+  if (moreSection.classList.contains("hidden")) {
+    moreSection.classList.remove("hidden");
+    btn.textContent = "Show Less";
+  } else {
+    moreSection.classList.add("hidden");
+    btn.textContent = "More Projects";
+  }
+}
+</script>
+<footer class="bg-dark py-8 border-t border-gray-800">
+<div class="container-resp">
+<div class="flex flex-col md:flex-row items-center md:items-center justify-between gap-6">
+<!-- Left: logo + tagline inline -->
+<div class="flex items-center gap-3">
+<img alt="Filaments Logo" class="h-8 w-auto" decoding="async" loading="lazy" src="img/logo.gif"/>
+<span class="uppercase tracking-[0.25em] text-gray-300 text-xs md:text-sm">No Monkey Business</span>
+</div>
+<!-- Center: filamenTS -->
+<div class="text-gray-400 text-xs md:text-sm text-center">
+         FILAMENTS
+          <a class="hover:text-primary" href="#privacy-policy"></a>
+</div>
+<!-- Center: copyright -->
+<div class="text-gray-400 text-xs md:text-sm text-center">
+          © 2025 Filaments VFX. All rights reserved. |
+          <a class="hover:text-primary" href="#privacy-policy">Privacy Policy</a>
+</div>
+<!-- Right: social buttons in subtle boxes -->
+<div class="flex items-center gap-3">
+<a aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-700 bg-gray-800/40 text-gray-300 hover:text-white hover:border-gray-500 transition" href="https://www.linkedin.com/in/yourprofile" target="_blank">
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.07c.66-1.25 2.28-2.57 4.7-2.57 5.03 0 5.95 3.3 5.95 7.6V24h-5V15.6c0-2.02-.04-4.62-2.82-4.62-2.82 0-3.25 2.2-3.25 4.47V24h-5V8z"></path>
+</svg>
+</a>
+<a aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-700 bg-gray-800/40 text-gray-300 hover:text-white hover:border-gray-500 transition" href="https://www.instagram.com/yourpage" target="_blank">
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-1.654-1.346-3-3-3H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2c1.654 0 3 1.346 3 3s-1.346 3-3 3a3 3 0 110-6zm4.5-3a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"></path>
+</svg>
+</a>
+<a aria-label="Facebook" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-700 bg-gray-800/40 text-gray-300 hover:text-white hover:border-gray-500 transition" href="https://www.facebook.com/yourpage" target="_blank">
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.675 0h-21.35C.595 0 0 .594 0 1.326v21.348C0 23.405.595 24 1.325 24H12.82v-9.294H9.692V11.01h3.127V8.41c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.309h3.587l-.467 3.696h-3.12V24h6.116C23.406 24 24 23.405 24 22.674V1.326C24 .594 23.406 0 22.675 0z"></path>
+</svg>
+</a>
+<a aria-label="Email" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-700 bg-gray-800/40 text-gray-300 hover:text-white hover:border-gray-500 transition" href="mailto:your@email.com">
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 13.065L.002 6h23.996L12 13.065zM12 15.868L0 8.535V20h24V8.535l-12 7.333z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Showcase video: click anywhere on hero videos to toggle mute, update icon -->
+<script>
+(function(){
+  const showcaseVideos = document.querySelectorAll('#home video');
+  const btn = document.getElementById('toggleSoundBtn');
+  if(!showcaseVideos || showcaseVideos.length === 0) return;
+
+  // start muted
+  let isMuted = true;
+  showcaseVideos.forEach(v => { try { v.muted = true; } catch(e){} });
+
+  // ensure icon initial state
+  if(btn) btn.textContent = '🔇';
+
+  showcaseVideos.forEach(video => {
+    // change cursor to indicate clickable
+    video.style.cursor = 'pointer';
+    video.addEventListener('click', () => {
+      isMuted = !isMuted;
+      showcaseVideos.forEach(v => { try { v.muted = isMuted; } catch(e){} });
+      if(btn) btn.textContent = isMuted ? '🔇' : '🔊';
+    });
+  });
+})();
+</script>
+<script>
+// If this page was loaded via a full reload, send user to the splash (index.html)
+// This makes the splash show again on browser refresh.
+// Use Navigation API where available.
+(function(){
+  try{
+    const navEntries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+    const navType = navEntries && navEntries.length ? navEntries[0].type : (performance.navigation && performance.navigation.type === 1 ? 'reload' : 'navigate');
+    if(navType === 'reload' || navType === 'back_forward'){
+      // avoid infinite loop: only redirect if not already on index
+      if (!/index\.html$/i.test(location.pathname) && !/index(?:\.html)?$/.test(location.pathname)) {
+        location.replace('index.html');
+      }
+    }
+  }catch(e){}
+})();
+</script>
+<script>
+// Always reset scroll to top on refresh
+window.addEventListener("beforeunload", () => {
+  window.scrollTo(0, 0);
+});
+
+// Ensure hash is cleared on load
+window.addEventListener("load", () => {
+  if(window.location.hash){
+    history.replaceState(null,null,window.location.pathname);
+    window.scrollTo(0,0);
+  }
+});
+</script>
+<script>
+// Hover-play for service videos without using external poster images.
+// Videos are loaded (preload=metadata) and left paused so browser shows first frame.
+// On hover they play (and loop); on mouseleave they pause and reset to 0.
+(function(){
+  const vids = document.querySelectorAll("#services .service-video");
+  if(!vids || vids.length === 0) return;
+  vids.forEach(v=>{
+    try{
+      v.pause();
+      // ensure first frame is available
+      v.preload = 'metadata';
+      // show first frame (some browsers need a tiny seek)
+      v.currentTime = 0;
+    }catch(e){}
+    // on enter/play
+    v.addEventListener("mouseenter", ()=>{
+      // attempt to play; keep muted so autoplay allowed
+      v.muted = true;
+      const p = v.play();
+      if(p && p.then) p.catch(()=>{/* autoplay blocked */});
+    });
+    // on leave/pause and rewind
+    v.addEventListener("mouseleave", ()=>{
+      try{
+        v.pause();
+        v.currentTime = 0;
+      }catch(e){}
+    });
+    // also support focus/blur for accessibility (keyboard)
+    v.addEventListener("focus", ()=>{ v.play && v.play(); });
+    v.addEventListener("blur", ()=>{ v.pause && (v.pause(), v.currentTime = 0); });
+    // on touch devices, play on touchstart and pause on touchend
+    v.addEventListener("touchstart", (e)=>{ e.stopPropagation(); v.muted = true; v.play && v.play(); }, {passive:true});
+    v.addEventListener("touchend", ()=>{ v.pause && (v.pause(), v.currentTime = 0); }, {passive:true});
+  });
+})();
+</script>
+<!-- Video Popup Modal (Not Fullscreen) -->
+<div class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 hidden" id="videoModal">
+<div class="relative bg-gray-900 rounded-2xl p-4 shadow-xl w-full max-w-3xl">
+<button class="absolute -top-8 right-0 text-white text-3xl font-bold" id="closeModal">×</button>
+<video autoplay="" class="w-full h-auto rounded-xl" controls="" id="modalVideo">
+<source src="" type="video/mp4"/>
+</video>
+</div>
+</div>
+<script>
+(function(){
+  const modal = document.getElementById("videoModal");
+  const modalVideo = document.getElementById("modalVideo");
+  const closeBtn = document.getElementById("closeModal");
+
+  // Open modal when clicking a service video
+  document.querySelectorAll("#services .service-video").forEach(video => {
+    video.addEventListener("click", () => {
+      const src = video.querySelector("source").src;
+      modalVideo.querySelector("source").src = src;
+      modalVideo.load();
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      modalVideo.play();
+    });
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    modalVideo.pause();
+    modalVideo.currentTime = 0;
+  });
+
+  // Close if click outside modal box
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      modalVideo.pause();
+      modalVideo.currentTime = 0;
+    }
+  });
+})();
+</script>
+<script>
+(function(){
+  const cards = document.querySelectorAll('#showreelGrid .poster-card');
+  const modal = document.getElementById('videoModal');
+  const modalVideo = document.getElementById('modalVideo');
+
+  cards.forEach(card => {
+    const vid = card.querySelector('.poster-thumb-video');
+    const seekTime = parseFloat(card.dataset.seek) || 0.05;
+
+    if(vid){
+      vid.addEventListener('loadedmetadata', ()=>{
+        try { setTimeout(()=>{ vid.currentTime = seekTime; }, 100); } catch(e){}
+      });
+      vid.addEventListener('seeked', ()=>{ try{ vid.pause(); }catch(e){} });
+
+      vid.addEventListener('click', ()=>{
+        modal.querySelector('source').src = card.dataset.src;
+        modalVideo.load();
+        modal.classList.remove('hidden'); modal.classList.add('flex');
+        modalVideo.play();
+      });
+    }
+
+    const btn = card.querySelector('.play-overlay');
+    if(btn){
+      btn.addEventListener('click', ()=>{
+        modal.querySelector('source').src = card.dataset.src;
+        modalVideo.load();
+        modal.classList.remove('hidden'); modal.classList.add('flex');
+        modalVideo.play();
+      });
+    }
+  });
+})();
+</script><script>
+// Prevent navigation to #contact when clicking the video inside a service card.
+// Only stop the anchor when the event starts from the video itself (so clicking the card outside the video still goes to contact).
+(function(){
+  document.querySelectorAll('#services .service-video').forEach(function(v){
+    v.addEventListener('click', function(e){
+      // stop the click from bubbling to the ancestor <a href="#contact"> which would navigate.
+      e.stopPropagation();
+      e.preventDefault && e.preventDefault();
+      // Also open the modal if other scripts rely on just video click (existing modal script will handle playback)
+      return false;
+    }, {passive:false});
+    // for safety on touch devices
+    v.addEventListener('touchstart', function(e){
+      e.stopPropagation();
+    }, {passive:true});
+  });
+})();
+</script></body>
+</html>
